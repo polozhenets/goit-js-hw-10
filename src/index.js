@@ -52,11 +52,11 @@ function inputHandler(e){
         }else if(countryNames.length < 10 && countryNames.length > 1){
             createCountryList(countryNames);
             //notify OK
-            Notify.success("alah babas")
+            Notify.success("OK")
         }else{
             clearAll();
             //notify too many matches
-            Notify.failure("")
+            Notify.failure("Failed:too many matches")
         };
     }).catch(() => Notify.failure("Country not found"))
 }
